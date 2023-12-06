@@ -1,0 +1,9 @@
+Step 1: The input string s is processed by removing leading and trailing whitespaces using the strip method.
+
+Step 2: The rfind method is then used to find the index of the last occurrence of a space (' ') in the string. The result is stored in last_space_index.
+
+Step 3: If there are no spaces in the string (i.e., last_space_index is -1), return the length of the entire string.
+
+Step 4: If there are spaces, return the length of the substring after the last space. This is achieved by slicing the string from last_space_index + 1 to the end and computing its length.
+
+Step 5: Print Result 

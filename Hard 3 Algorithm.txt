@@ -1,0 +1,21 @@
+Step 1 : Initialize `count` to 0, representing the count of digit '1' occurrences.
+   - Initialize `factor` to 1, representing the current position (units, tens, hundreds, etc.).
+
+Step 2 :  Use a while loop to iterate until `factor` exceeds the given number `n`.
+
+Step 3 : Calculate `divisor` for the current position, which is `factor * 10`.
+
+Step 4 :  Calculate `fullCycles`, representing the number of full cycles completed at the current position, by dividing `n` by `divisor`.
+
+Step 5 :  Calculate `remainingDigits`, representing the remaining digits after the full cycles, by taking the modulus of `n` with `divisor`.
+
+Step 6 : Calculate Count for Current Position:
+   - Calculate the count for the current position using the formula:
+     ```
+     count += fullCycles * factor + min(max(remainingDigits - factor + 1, 0), factor)
+     ```
+
+Step 7 : Update `factor` to move to the next position (e.g., units to tens, tens to hundreds).
+
+Step 8 : Return Final Count
+   
